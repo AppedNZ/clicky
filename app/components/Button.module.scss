@@ -4,6 +4,9 @@
   &.small {
     @apply p-3;
   }
+  &.medium {
+    @apply p-5 text-2xl leading-none;
+  }
   &.regular {
     @apply p-5 xl:p-7 xl:text-3xl;
   }
