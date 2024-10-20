@@ -1,0 +1,19 @@
+.hero {
+  background-color: #f59101;
+}
+.logo {
+  width: clamp(146px, 33%, 278px);
+}
+.heading {
+  @apply relative z-10 inline-flex items-center gap-2 leading-none text-white uppercase;
+  max-width: max-content;
+  overflow: hidden;
+  transition: all 0.5s;
+  font-size: clamp(29px, 3.5vw, 48px);
+  font-weight: 600;
+}
+
+.subheading {
+  @apply text-white uppercase font-extrabold leading-none;
+  font-size: clamp(36px, 5.5vw, 96px);
+}

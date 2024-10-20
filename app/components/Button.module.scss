@@ -1,0 +1,13 @@
+.button {
+  @apply text-white font-extrabold uppercase text-center;
+  border-radius: 10px;
+  &.small {
+    @apply p-3;
+  }
+  &.regular {
+    @apply p-5 xl:p-7 xl:text-3xl;
+  }
+  &.primary {
+    background: linear-gradient(180deg, #ffba56 0%, #ff9700 24.5%, #eb8d00 100%);
+  }
+}

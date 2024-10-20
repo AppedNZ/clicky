@@ -1,0 +1,37 @@
+.slide {
+  @apply relative  overflow-hidden flex flex-col p-4 items-center justify-center gap-4;
+  border-radius: 10px;
+  border-bottom: 4px white solid;
+  box-shadow: 0px 10px 20px 0px #0000001a;
+  height: 120px;
+  background: #000;
+  p,
+  span {
+    @apply relative z-10 text-white leading-none font-extrabold text-center uppercase;
+  }
+  span {
+    font-size: 32px;
+  }
+
+  &.alarm {
+    border-color: #ff5656;
+  }
+  &.electricians {
+    border-color: #ffba56;
+  }
+  &.carpet {
+    border-color: #00bdca;
+  }
+  &.landscape {
+    border-color: #79d800;
+  }
+  &.plumbers {
+    border-color: #0094ff;
+  }
+  &.builders {
+    border-color: #e68e0b;
+  }
+  &.lawnmowers {
+    border-color: #15c300;
+  }
+}
