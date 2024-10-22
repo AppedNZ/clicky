@@ -1,7 +1,7 @@
 import { Rubik } from "next/font/google";
 import "./globals.css";
 const rubik = Rubik({
-  weight: ["300", "400", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
   subsets: ["latin"],
 });

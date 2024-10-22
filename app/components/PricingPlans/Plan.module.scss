@@ -1,0 +1,59 @@
+.plan {
+  @apply p-6 lg:p-8 2xl:p-10 bg-white text-black w-full flex flex-col gap-2;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px #0000001a;
+
+  h5 {
+    @apply text-2xl font-extrabold leading-none uppercase;
+  }
+  h6 {
+    @apply text-primary leading-none font-extrabold uppercase;
+    font-size: clamp(40px, 2.5vw, 48px);
+  }
+  .checkMark {
+    @apply w-8 h-6 text-gray-500/50  stroke-1  stroke-gray-500/50;
+  }
+  .feature {
+    @apply py-4 border-b border-b-black/10 flex gap-2.5 font-light text-xl text-black/50;
+    &:first-child {
+      @apply pt-0;
+    }
+    &:last-child {
+      @apply border-b-0;
+    }
+    &.included {
+      @apply text-black;
+      .checkMark {
+        @apply text-primary stroke-primary opacity-100;
+      }
+    }
+  }
+  &:nth-child(2n) {
+    h5 {
+      @apply text-white;
+    }
+    h6 {
+      @apply text-white;
+      font-size: clamp(40px, 2.5vw, 48px);
+    }
+    background: linear-gradient(180deg, #ffba56 0%, #ff9700 24.5%, #eb8d00 100%);
+    .feature {
+      @apply border-b-white/40  text-white/50;
+      &:first-child {
+        @apply pt-0;
+      }
+      .checkMark {
+        @apply w-8 h-6 text-white/50  stroke-1 stroke-white/50;
+      }
+      &.included {
+        @apply text-white;
+        .checkMark {
+          @apply text-white stroke-white opacity-100;
+        }
+      }
+    }
+    button {
+      background: black;
+    }
+  }
+}

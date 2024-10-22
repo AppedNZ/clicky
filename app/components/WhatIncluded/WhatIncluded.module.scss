@@ -1,0 +1,10 @@
+.included {
+  @apply w-full flex items-center gap-6 2xl:gap-10 p-6 lg:p-8 2xl:p-10;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px #0000001a;
+}
+.slide {
+  @apply flex w-full gap-6 leading-none text-balance;
+  flex: 0.5 1 fit-content;
+  font-size: clamp(14px, 1.5vw, 18px);
+}

@@ -1,0 +1,17 @@
+.wrap {
+  @apply p-6 lg:p-12 2xl:p-16 flex flex-col lg:flex-row gap-5 lg:gap-10 justify-between;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 0px 40px 0px #0000001a;
+}
+.leftSide {
+  @apply flex flex-col gap-4 lg:max-w-[586px] w-full;
+}
+.list {
+  @apply flex flex-col gap-4 w-full lg:max-w-[586px];
+  li {
+    @apply w-full bg-white flex items-center text-black font-medium lg:text-lg leading-tight p-4 lg:px-7 gap-4 lg:gap-6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 0px #0000001a;
+  }
+}

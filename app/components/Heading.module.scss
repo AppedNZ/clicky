@@ -1,0 +1,7 @@
+.h5 {
+  @apply font-extrabold leading-none text-black uppercase;
+  font-size: clamp(32px, 4vw, 48px);
+  &.white {
+    @apply text-white;
+  }
+}

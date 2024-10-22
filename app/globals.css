@@ -27,4 +27,14 @@ body {
     box-shadow: 0px 0px 40px 0px #0000001A;
 
   }
+
+  .shadow {
+    box-shadow: 0px 0px 40px 0px #0000001A;
+
+  }
+
+  .primary-gradient {
+    background: linear-gradient(180deg, #FFBA56 0%, #FF9700 24.5%, #EB8D00 100%);
+
+  }
 }

@@ -1,0 +1,14 @@
+.slideWrap {
+  @apply p-4 overflow-auto;
+}
+.slide {
+  @apply w-full   bg-white p-6 flex justify-center items-center;
+  height: 140px !important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #0000001a;
+
+  img {
+    @apply w-full h-full object-contain;
+    max-height: 70px;
+  }
+}
