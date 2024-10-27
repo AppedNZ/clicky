@@ -1,9 +1,19 @@
-.sliderWrapper {
-  @apply min-w-max rounded-xl text-white font-extrabold flex  justify-center items-center uppercase leading-none text-center;
+.selectWrapper {
+  @apply p-5 xl:p-8 shadow flex flex-col items-center lg:flex-row gap-2.5;
+  border-radius: 10px;
+  background: #f1f1f1;
   box-shadow: 0px 10px 20px 0px #0000001a;
-  font-size: clamp(32px, 2.5vw, 48px);
+}
+.select {
+  @apply min-w-max w-full rounded-xl text-white font-extrabold flex  justify-center items-center uppercase leading-none text-center p-2.5  appearance-none outline-none;
+
+  font-size: clamp(16px, 2.5vw, 20px);
   transition: all 0.4s;
-  background: linear-gradient(180deg, #779c48 0%, #638834 19.5%, #456a16 100%);
+
+  &.location {
+    @apply text-black;
+    background: white;
+  }
   &.landscaping {
     background: linear-gradient(180deg, #779c48 0%, #638834 19.5%, #456a16 100%);
   }
@@ -34,37 +44,22 @@
   &.window-repair {
     background: linear-gradient(180deg, #dedede 0%, #aeaeae 19.5%, #767676 100%);
   }
-}
-.sliderWrapper .slide {
-  @apply p-4;
-  width: max-content;
-}
-.oldService {
-  @apply relative min-w-max leading-none;
-  &.moveAway {
-    animation: moveaway 0.51s forwards;
+  option {
+    @apply text-lg font-normal;
+    font-size: clamp(16px, 2.5vw, 16px);
+    text-transform: lowercase;
   }
 }
-.newService {
-  @apply absolute top-0 translate-y-[84px] left-1/2 -translate-x-1/2 w-max leading-none;
-  &.moveUp {
-    animation: moveup 0.51s forwards;
-  }
-}
+.availability {
+  @apply p-5 font-extrabold text-black uppercase text-center  text-xl mb-10 bg-light-gray;
+  border-radius: 10px;
 
-@keyframes moveup {
-  0% {
-    transform: translate(-50%, 84px);
+  &.available {
+    @apply text-white;
+    background: linear-gradient(180deg, #779c48 0%, #638834 19.5%, #456a16 100%);
   }
-  100% {
-    transform: translate(-50%, 16px);
-  }
-}
-@keyframes moveaway {
-  0% {
-    transform: translate(0%, 0px);
-  }
-  100% {
-    transform: translate(0%, -84px);
+  &.taken {
+    @apply text-white;
+    background: linear-gradient(180deg, #ff5656 0%, #ff0000 24.5%, #d70000 100%);
   }
 }

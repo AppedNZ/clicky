@@ -6,6 +6,7 @@ import HowItWorks from "./components/HowItWorks/HowItWorks";
 import MarketingPlan from "./components/MarketingPlan/MarketingPlan";
 import PricingPlans from "./components/PricingPlans/PricingPlans";
 import ReadyToStart from "./components/ReadyToStart/ReadyToStart";
+import ServiceAvailability from "./components/ServiceAvailability/ServiceAvailability";
 import SomeServices from "./components/SomeServices/SomeServices";
 import WeHelp from "./components/WeHelp/WeHelp";
 import WhatIncluded from "./components/WhatIncluded/WhatIncluded";
@@ -18,6 +19,7 @@ export default function Home() {
       <GetMore />
       <HowItWorks />
       <SomeServices />
+      <ServiceAvailability />
       <PricingPlans />
       <WhatIncluded />
       <MarketingPlan />
