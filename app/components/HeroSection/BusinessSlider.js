@@ -6,8 +6,8 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { services } from "../../constants/services";
 import styles from "./BusinessSlider.module.scss";
-export default function BusinessSlider({ current_service }) {
-  const [service, setService] = useState(current_service);
+export default function BusinessSlider() {
+  const [service, setService] = useState(services[0]);
   const [serviceWidth, setServiceWidth] = useState();
 
   return (
@@ -17,7 +17,7 @@ export default function BusinessSlider({ current_service }) {
         minWidth: "50px",
         overflow: "hidden",
       }}
-      className={`${styles.sliderWrapper} ${styles?.[service]}  relative transition-all duration-500 h-[75px]`}
+      className={`${styles.sliderWrapper} ${styles?.[service]}  relative transition-all duration-500 h-[calc(clamp(32px,2.5vw,48px)+32px)]`}
       modules={[Autoplay]}
       onSwiper={(swiper) => {
         const currentSlide = swiper.slides.find((slide) =>
@@ -33,7 +33,6 @@ export default function BusinessSlider({ current_service }) {
           Array.from(slide.classList).includes("swiper-slide-active")
         );
         if (nextSlide) {
-          console.log(nextSlide.dataset.service);
           setService(nextSlide.dataset?.service ?? current_service);
           setServiceWidth(nextSlide.clientWidth);
         }

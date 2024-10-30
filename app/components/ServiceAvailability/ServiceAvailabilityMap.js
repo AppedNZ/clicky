@@ -1,7 +1,26 @@
 "use client";
-import AvailablePin from "./AvailablePin";
+
 import Pin from "./Pin";
-import TakenPin from "./TakenPin";
+
+const pins = [
+  { title: "Whangarei", x: 403, y: 76 },
+  { title: "Auckland", x: 430, y: 170 },
+  { title: "Hamilton", x: 451, y: 229 },
+  { title: "Tauranga", x: 508, y: 230 },
+  { title: "Rotorua", x: 514, y: 246 },
+  { title: "Gisborne", x: 587, y: 279 },
+  { title: "Napier", x: 535, y: 330 },
+  { title: "Taupo", x: 490, y: 280 },
+  { title: "New Plymouth", x: 419, y: 294 },
+  { title: "Whanganui", x: 428, y: 350 },
+  { title: "Hastings", x: 532, y: 343 },
+  { title: "Palmerston North", x: 464, y: 376 },
+  { title: "Wellington", x: 464, y: 427 },
+  { title: "Nelson", x: 355, y: 437 },
+  { title: "Christchurch", x: 326, y: 590 },
+  { title: "Dunedin", x: 210, y: 719 },
+  { title: "Invercargill", x: 106, y: 755 },
+];
 export default function ServiceAvailabilityMap({ taken }) {
   return (
     <svg viewBox="0 0 654 857" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +32,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -22,7 +42,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -31,7 +52,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -40,7 +62,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -49,7 +72,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -58,7 +82,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -67,7 +92,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -76,7 +102,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -85,7 +112,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -94,7 +122,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -103,7 +132,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -112,7 +142,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -121,7 +152,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -130,7 +162,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -139,7 +172,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -148,7 +182,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -157,7 +192,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -166,7 +202,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -175,7 +212,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -184,7 +222,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -193,7 +232,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -202,7 +242,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -211,7 +252,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -220,7 +262,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -229,7 +272,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -238,7 +282,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -247,7 +292,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -256,7 +302,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -265,18 +312,21 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M390.661 416.131L390.796 415.663C391.177 415.552 391.684 415.313 391.845 414.925L392.341 415.015L392.356 415.375C392.075 415.953 391.252 416.197 390.661 416.131Z"
-        fill="#FF9700"></path>
+        fill="#FF9700"
+      />
       <path
         d="M390.661 416.131L390.796 415.663C391.177 415.552 391.684 415.313 391.845 414.925L392.341 415.015L392.356 415.375C392.075 415.953 391.252 416.197 390.661 416.131ZM390.661 416.131V416.059"
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -285,7 +335,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -294,7 +345,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -303,7 +355,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -312,7 +365,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -321,7 +375,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -330,7 +385,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -339,7 +395,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -348,7 +405,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -357,7 +415,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -366,7 +425,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -375,7 +435,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -384,7 +445,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -393,7 +455,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -402,7 +465,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -411,7 +475,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -420,7 +485,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -429,7 +495,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -438,7 +505,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -447,7 +515,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -456,7 +525,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -465,7 +535,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -474,7 +545,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -483,7 +555,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -492,7 +565,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -501,7 +575,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -510,7 +585,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -519,7 +595,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -528,7 +605,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -537,7 +615,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -546,7 +625,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -555,7 +635,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -564,7 +645,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -573,7 +655,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -582,7 +665,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -591,7 +675,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -600,7 +685,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -609,7 +695,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -618,7 +705,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -627,7 +715,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -636,7 +725,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -645,7 +735,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -654,7 +745,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -663,7 +755,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -672,7 +765,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -681,7 +775,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -690,7 +785,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -699,7 +795,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -708,7 +805,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -717,7 +815,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -726,7 +825,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -735,7 +835,8 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -744,144 +845,161 @@ export default function ServiceAvailabilityMap({ taken }) {
         stroke="#F6F6F6"
         strokeWidth="1.8425"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M421.246 194.502L423.321 193.239L424.584 192.969L425.486 193.42L426.659 192.292L428.148 191.841L428.644 190.939L430.809 191.435L431.17 192.428L432.118 192.112L433.02 191.03L435.095 191.345L435.32 189.677L436.448 188.955H437.395L438.478 190.218L439.606 189L441.32 188.053L443.801 187.963L444.523 188.504L446.102 187.738V185.844L446.688 185.032L445.921 183.273L446.823 177.546L448.267 179.395L449.756 178.628L454.853 178.313"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M344.757 441.195L345.615 442.465L346.066 443.187L346.698 443.548C346.698 443.548 346.969 443.818 347.239 444.269C347.51 444.72 348.322 445.081 348.322 445.081C348.322 445.081 348.773 445.442 349.314 445.893C349.856 446.343 351.119 446.704 351.119 446.704"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M351.125 446.705L350.849 447.336V448.689C350.849 448.689 350.068 449.509 349.527 450.14C348.986 450.771 348.535 451.132 348.535 451.132C348.535 451.132 349.076 451.944 349.347 452.395C349.617 452.846 349.798 452.846 350.519 453.477C351.241 454.109 350.519 454.379 349.978 454.289C349.437 454.199 348.535 454.379 348.535 454.379C348.535 454.379 347.542 454.289 347.001 454.289C346.46 454.289 345.557 454.65 344.836 454.559C344.114 454.469 344.204 454.92 344.204 454.92L344.475 455.822C344.475 455.822 343.933 456.724 343.753 457.265C343.573 457.806 342.4 458.167 342.4 458.167L341.949 459.34H341.046L340.595 460.332L338.881 460.692C338.881 460.692 339.152 462.135 338.971 462.496C338.791 462.857 336.535 466.014 336.535 466.014C336.535 466.014 335.002 467.186 334.37 467.637C333.739 468.088 332.656 467.547 332.656 467.547V468.81L333.468 469.892L331.212 471.876L330.31 475.213L328.957 476.295L329.679 476.927V477.919L328.055 479.632L326.521 480.083C326.521 480.083 326.25 482.068 325.619 482.338C324.987 482.609 325.077 483.691 325.077 483.691C325.077 483.691 324.536 485.314 323.273 484.773C322.01 484.232 322.551 485.224 322.642 486.036C322.732 486.848 322.461 488.742 322.461 488.742"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M322.466 488.742L320.747 489.193L320.386 488.02C320.386 488.02 319.123 488.832 318.311 489.193C317.499 489.554 318.04 490.816 318.04 490.816C318.04 490.816 317.138 491.989 316.777 492.53C316.416 493.071 317.138 494.875 317.138 494.875L316.145 495.957C316.145 495.957 315.424 496.137 314.792 496.047C314.16 495.957 312.897 497.31 312.897 497.31L311.634 498.843L310.101 499.384"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M296.748 408.517L298.327 410.276C298.327 410.276 298.102 410.952 297.921 411.223C297.741 411.494 297.831 411.719 297.966 412.215C298.102 412.711 297.741 412.801 297.47 413.117C297.2 413.433 297.56 414.019 297.56 414.019C297.56 414.019 298.102 413.884 298.372 413.478C298.643 413.072 299.049 413.252 299.094 413.523C299.139 413.793 299.184 414.019 299.5 414.154C299.816 414.29 300.222 414.38 300.222 414.38C300.222 414.38 300.357 415.146 300.132 415.417C299.906 415.687 300.222 416.048 300.222 416.048C300.222 416.048 300.808 416.319 300.853 416.499C300.899 416.68 300.944 416.905 300.763 417.176C300.583 417.446 301.259 417.401 301.62 417.401C301.981 417.401 302.207 417.897 302.207 417.897L302.748 417.942C302.748 417.942 303.199 417.536 303.425 417.717C303.65 417.897 304.011 417.897 304.462 417.897C304.913 417.897 305.049 418.438 305.139 418.664C305.229 418.889 305.455 419.205 305.004 419.521C304.552 419.836 304.282 420.468 303.921 420.873C303.56 421.279 303.425 421.144 302.974 421.054C302.523 420.964 302.162 421.415 302.071 421.64C301.981 421.866 301.891 422.181 301.53 422.452C301.169 422.722 301.44 422.903 301.665 423.128C301.891 423.354 302.658 424.301 302.658 424.301C302.658 424.301 302.477 424.887 302.117 425.203C301.756 425.518 302.523 425.608 302.929 425.608C303.335 425.608 303.38 425.428 303.38 425.428C303.38 425.428 303.786 424.797 303.921 424.526C304.056 424.256 304.507 423.76 304.688 423.489C304.868 423.218 305.274 423.263 305.635 423.399C305.996 423.534 306.763 424.03 306.763 424.03C306.763 424.03 307.62 423.624 307.71 423.309C307.8 422.993 308.297 423.038 308.748 423.218C309.199 423.399 310.236 423.263 310.552 423.309C310.868 423.354 310.778 423.579 310.823 424.075C310.868 424.571 310.281 425.067 310.281 425.067L310.372 425.834L311.454 425.744C311.454 425.744 311.815 425.969 311.951 426.42C312.086 426.871 311.905 427.322 311.725 427.683C311.545 428.044 313.62 428.044 313.62 428.044L314.612 429.532L315.469 430.208L315.785 430.749L316.913 431.741C316.913 431.741 316.913 432.418 317.048 432.824C317.183 433.23 317.409 433.68 317.409 433.68C317.409 433.68 318.131 433.635 318.627 433.5C319.123 433.365 319.303 433.184 319.303 433.184L320.612 434.041C320.612 434.041 320.341 434.853 319.935 435.214C319.529 435.574 318.852 436.206 318.672 436.431C318.491 436.657 317.86 436.792 317.499 436.612C317.138 436.431 316.507 437.333 316.507 437.333C316.507 437.333 315.018 437.559 314.792 437.694C314.567 437.829 314.702 438.28 315.063 438.596C315.424 438.911 315.334 439.453 315.334 439.453L315.965 439.813C315.965 439.813 316.101 440.896 315.785 441.076C315.469 441.256 315.604 442.429 315.334 442.699C315.063 442.97 315.244 443.872 315.334 444.097C315.424 444.323 315.604 445.044 314.838 444.954C314.071 444.864 313.935 445.586 313.8 445.991C313.665 446.397 313.349 446.397 312.853 446.487C312.356 446.578 312.041 446.803 311.815 446.984C311.59 447.164 311.319 447.074 311.093 446.803C310.868 446.533 310.146 446.623 309.515 446.758C308.883 446.893 308.973 445.946 308.973 445.946C308.973 445.946 308.071 446.803 307.259 446.803C306.447 446.803 306.943 447.66 307.485 447.84C308.026 448.021 307.755 448.246 307.44 448.427C307.124 448.607 307.259 448.742 307.44 449.193C307.62 449.644 307.169 449.734 307.169 450.14C307.169 450.546 307.079 450.862 306.582 450.952C306.086 451.042 306.131 451.087 305.906 451.493C305.68 451.899 305.41 451.944 305.049 451.944C304.688 451.944 304.598 452.034 304.147 452.485C303.695 452.936 303.199 453.116 303.199 453.116L303.56 454.154C303.56 454.154 303.56 454.56 303.56 455.191C303.56 455.822 302.883 455.867 302.883 455.867L302.748 456.454C302.748 456.454 302.929 456.995 302.974 457.671C303.019 458.348 302.568 458.618 302.523 458.798C302.477 458.979 302.117 459.295 301.53 459.34C300.944 459.385 301.034 459.971 301.124 460.332C301.214 460.692 300.989 460.692 300.673 460.692C300.357 460.692 300.177 460.783 299.951 460.422C299.726 460.061 299.365 460.242 299.184 460.422C299.004 460.602 298.418 460.783 298.418 460.783L298.463 461.91L299.094 462.361L298.733 463.443L299.23 464.21C299.23 464.21 299.094 464.435 299.004 464.616C298.914 464.796 298.418 464.796 298.282 464.526C298.147 464.255 297.2 464.12 297.019 464.39C296.839 464.661 296.568 464.661 296.252 464.39C295.937 464.12 295.621 464.435 295.395 464.706C295.17 464.977 295.17 464.977 294.493 464.751C293.816 464.526 294.132 464.886 294.042 465.157C293.952 465.427 293.591 465.608 293.14 465.518C292.689 465.427 293.004 465.833 292.463 466.329C291.922 466.825 292.689 466.735 292.689 467.051C292.689 467.367 292.192 468.404 291.696 468.674C291.2 468.945 291.561 469.621 291.832 469.757C292.102 469.892 292.328 469.982 292.328 469.982L292.147 474.852L291.516 474.943L291.335 476.295C291.335 476.295 291.155 476.431 290.704 476.431C290.253 476.431 289.937 476.882 290.072 477.062C290.208 477.242 290.614 477.964 290.614 477.964C290.614 477.964 290.072 479.046 289.576 479.182C289.08 479.317 289.441 480.174 289.441 480.174L290.253 480.579C290.253 480.579 290.117 481.481 290.343 481.797C290.568 482.113 290.208 482.293 290.433 482.699C290.659 483.105 290.839 483.105 291.245 483.195C291.651 483.285 292.643 483.42 292.643 483.42C292.643 483.42 292.598 484.052 292.508 484.503C292.418 484.954 291.967 485.63 291.967 485.63C291.967 485.63 292.238 486.307 292.418 486.622C292.598 486.938 292.418 487.389 293.004 487.389C293.591 487.389 293.501 487.569 293.32 488.02C293.14 488.471 293.501 489.012 293.501 489.012C293.501 489.012 294.403 489.012 295.215 488.832C296.027 488.652 296.929 488.652 296.929 488.652C296.929 488.652 297.38 489.644 297.56 490.095C297.741 490.545 297.921 490.636 298.553 490.545C299.184 490.455 299.275 491.357 299.275 491.357L303.244 491.538L303.876 493.161C303.876 493.161 303.786 493.522 303.695 493.973C303.605 494.424 303.605 494.965 303.966 495.686C304.327 496.408 303.876 496.318 303.515 496.769C303.154 497.22 303.786 497.761 304.147 498.302C304.507 498.843 304.056 499.384 304.056 499.384L306.131 500.376L308.026 500.737L308.748 499.565L310.101 499.384"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M392.652 479.542L391.389 478.641C391.389 478.641 390.577 478.37 390.126 478.28C389.675 478.19 387.509 477.829 386.788 477.829C386.066 477.829 385.885 477.648 385.705 477.017C385.525 476.386 383.359 477.017 383.359 477.017L379.299 478.731C379.299 478.731 378.127 479.362 377.675 479.362C377.224 479.362 376.954 478.821 376.683 477.829C376.412 476.837 376.051 476.656 375.149 476.837C374.247 477.017 373.886 477.919 373.706 478.28C373.525 478.641 373.525 479.362 373.525 479.362C373.525 479.362 371.811 480.354 371.27 480.715C370.728 481.076 369.826 482.338 369.826 482.338L367.3 483.33C367.3 483.33 366.849 483.872 366.488 484.413C366.127 484.954 365.225 485.856 364.684 486.036C364.142 486.217 362.338 486.307 362.338 486.307C362.338 486.307 361.436 490.005 361.436 490.546C361.436 491.087 361.255 491.718 362.067 492.8C362.879 493.883 360.624 494.153 360.624 494.153L359.722 495.236L357.737 495.777L354.038 496.949C354.038 496.949 349.076 500.467 347.362 501.549C345.647 502.631 347.001 503.082 347.813 503.353C348.625 503.623 348.264 504.796 347.903 505.066C347.542 505.337 346.099 507.502 345.467 508.043C344.835 508.584 344.655 509.756 344.655 509.756L341.046 510.658L340.144 511.38L338.61 511.109C338.61 511.109 338.34 510.027 337.798 509.666C337.257 509.305 336.896 508.854 336.896 508.854L336.445 506.87L333.648 504.976C333.648 504.976 333.378 503.263 333.287 502.451C333.197 501.639 332.295 501.549 331.754 501.639C331.212 501.729 330.581 501.459 329.769 501.278C328.957 501.098 328.867 500.376 328.867 500.376C328.867 500.376 329.498 499.024 329.769 498.392C330.039 497.761 329.408 497.761 328.596 497.49C327.784 497.22 327.784 495.687 327.784 494.965C327.784 494.244 327.513 493.883 327.152 493.612C326.791 493.342 325.889 492.259 325.889 492.259C325.889 492.259 325.168 492.35 324.716 492.35C324.265 492.35 323.363 492.259 323.363 492.259L322.641 490.816L322.461 488.742"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M368.834 428.855C368.834 428.855 368.654 429.396 368.473 430.027C368.293 430.659 368.202 431.651 368.202 431.651L367.932 433.004C367.932 433.004 367.21 433.455 366.578 433.906C365.947 434.357 364.503 435.168 364.503 435.168C364.503 435.168 364.143 435.439 363.511 435.709C362.879 435.98 362.067 436.431 362.067 436.431L360.714 437.423L359.812 438.325L358.91 439.227L358.729 441.031L358.278 441.933L356.57 442.654L355.481 443.376C355.481 443.376 354.76 444.548 354.489 444.999C354.218 445.45 353.194 445.983 353.194 445.983H352.382L351.119 446.704"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M521.124 389.352L519.23 389.172L517.516 387.909L517.245 388.901L514.538 387.458L514.177 388.27L511.561 387.729C511.561 387.729 511.471 387.278 510.749 386.646C510.027 386.015 508.855 384.752 508.855 384.752L509.847 383.219C509.847 383.219 508.855 381.956 509.396 381.325C509.937 380.694 510.298 379.611 510.298 379.611L509.125 378.349L509.215 376.815L508.494 374.561L509.576 371.855L508.945 371.133L507.682 370.322L505.578 368.518L506.209 366.895L503.864 365.542L503.503 364.189L501.518 362.656L498.36 362.024L497.187 362.836L495.563 360.491C495.563 360.491 497.277 359.048 496.917 358.417C496.556 357.785 496.375 355.711 496.375 355.711C496.375 355.711 497.187 354.448 497.187 353.997C497.187 353.546 497.999 350.57 497.999 350.57L499.172 347.143L499.533 343.084L500.616 341.01L501.157 340.108L499.623 338.394C499.623 338.394 500.616 337.132 500.616 336.771C500.616 336.41 500.074 335.598 499.443 335.598C498.811 335.598 498.631 334.065 498.631 334.065C498.631 334.065 499.021 331.81 499.562 331.54C500.103 331.269 500.284 330.818 500.464 330.458C500.645 330.097 500.915 328.564 500.915 328.564L499.742 328.383L498.209 326.399L498.479 325.046C498.479 325.046 497.577 323.874 497.577 323.242C497.577 322.611 497.577 321.709 497.577 321.709L496.855 320.537L495.231 320.988L493.968 320.537L494.058 319.364L495.051 319.635L496.314 318.282L497.577 317.831V316.839C497.577 316.839 496.855 316.568 496.855 315.937C496.855 315.306 496.855 314.584 496.675 314.133C496.494 313.682 496.134 312.69 496.134 312.69L497.216 310.976L497.577 310.165L497.036 309.804L496.134 310.075L495.773 309.353C495.773 309.353 496.765 308.902 496.585 308.361C496.404 307.82 496.043 307.369 496.585 307.369C497.126 307.369 497.577 307.098 497.126 306.647C496.675 306.196 496.224 304.573 496.224 304.573L496.946 303.942V302.769C496.946 302.769 499.049 302.016 499.501 301.836C499.952 301.655 501.456 301.114 499.923 301.114C498.389 301.114 498.479 300.122 499.291 299.581C500.103 299.04 501.276 297.416 501.276 297.416L503.712 295.432L504.614 293.809L504.253 291.103C504.253 291.103 504.524 290.472 504.885 290.652C505.246 290.832 506.328 291.193 506.779 291.193C507.231 291.193 507.501 291.193 507.501 291.824C507.501 292.456 507.411 293.087 507.682 293.538C507.952 293.989 508.313 294.35 508.313 294.35C508.313 294.35 509.306 294.62 509.486 294.981C509.666 295.342 510.208 296.244 510.208 296.244C510.208 296.244 511.742 297.506 512.102 297.687C512.463 297.867 513.636 298.228 513.636 298.228L514.358 297.506L513.817 295.973L515.17 294.26L514.177 292.816L515.531 290.562L518.237 289.421L518.779 287.076L517.516 286.233C517.516 286.233 517.786 285.06 518.418 285.06C519.049 285.06 520.764 285.601 520.764 285.601L521.215 287.225L522.297 286.684L524.643 286.954L524.823 287.766L525.726 287.856L525.635 289.209L526.898 289.299L527.259 287.405L526.898 286.233L527.259 283.707C527.259 283.707 527.71 281.994 527.71 281.633C527.71 281.272 527.62 280.641 528.342 280.911C529.064 281.182 529.695 280.28 529.695 280.28L530.327 279.468C530.327 279.468 530.868 277.845 531.77 278.115C532.673 278.386 533.304 279.017 533.304 279.017C533.304 279.017 535.199 277.877 535.74 277.606C536.281 277.335 535.469 278.115 535.469 278.115C535.469 278.115 537.454 277.335 537.815 277.065C538.176 276.794 537.635 277.755 537.635 278.296C537.635 278.837 538.988 279.288 538.988 279.288L540.973 280.1C540.973 280.1 543.318 278.508 543.499 278.057C543.679 277.606 544.04 276.794 544.04 276.794C544.04 276.794 544.582 274.81 545.303 274.54C546.025 274.269 546.927 273.908 546.927 273.908L548.371 274.81L548.732 273.277L549.453 272.375L554.325 274.449L559.197 277.606L559.648 273.728L561.362 275.171C561.362 275.171 562.445 275.351 562.986 275.351C563.528 275.351 564.34 276.073 564.34 276.073L566.324 276.524C566.324 276.524 566.234 277.516 565.693 277.967C565.152 278.418 564.249 280.041 564.249 280.041C564.249 280.041 564.61 280.041 565.422 280.312C566.234 280.582 566.866 280.853 566.866 280.853C566.866 280.853 567.317 281.935 567.317 282.386C567.317 282.837 567.227 284.01 567.227 284.01L568.129 285.272L569.302 285.453L570.204 288.158C570.204 288.158 571.196 287.527 571.647 287.347C572.099 287.166 573.181 287.527 573.181 287.527L573.001 288.88L573.091 290.774L574.715 289.872L574.895 291.405C574.895 291.405 575.707 291.044 575.978 290.684C576.249 290.323 576.79 291.225 576.519 291.766C576.249 292.307 576.158 294.291 576.158 294.291C576.158 294.291 577.331 294.021 577.873 294.021C578.414 294.021 579.045 293.931 579.045 293.931L579.226 295.013C579.226 295.013 580.309 295.103 580.489 294.562C580.669 294.021 581.662 294.923 581.662 294.923L582.835 293.931L583.466 295.283L585.271 295.825L584.729 297.087L584.549 297.719L586.624 298.53"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M427.567 351.652L427.657 350.39L429.011 349.939C429.011 349.939 429.101 348.225 429.732 348.225C430.364 348.225 430.995 347.864 430.995 347.864L431.356 346.061L432.258 345.88L433.702 344.617L434.965 344.527C434.965 344.527 435.506 343.084 435.416 342.273C435.326 341.461 435.597 340.018 435.597 340.018L436.589 339.657L437.762 339.477C437.762 339.477 438.393 339.567 437.852 338.034C437.311 336.5 437.852 335.238 437.852 335.238C437.852 335.238 436.95 332.893 437.852 332.261C438.754 331.63 438.574 330.818 438.123 330.638C437.672 330.458 437.491 329.826 437.491 329.105C437.491 328.383 437.491 327.391 436.95 327.121C436.409 326.85 434.785 326.219 434.785 326.219L432.71 321.078L433.522 320.266L433.161 319.184L433.792 318.823L433.702 318.011L432.168 317.741C432.168 317.741 431.717 317.38 431.266 317.29C430.815 317.2 430.183 317.2 430.183 317.2C430.183 317.2 430.003 315.666 429.462 315.125C428.92 314.584 427.928 313.592 427.928 313.592L427.206 313.953L426.935 314.584C426.935 314.584 426.304 314.223 426.394 313.502C426.484 312.78 426.484 310.345 426.484 310.345L423.778 308.541C423.778 308.541 424.139 306.918 423.958 306.467C423.778 306.016 423.597 304.844 423.236 304.302C422.876 303.761 422.605 302.679 423.417 302.499C424.229 302.318 425.041 301.326 425.131 300.965C425.221 300.605 425.943 299.703 425.943 299.703C425.943 299.703 426.484 300.154 427.116 300.154C427.747 300.154 428.289 299.612 428.379 299.071C428.469 298.53 427.657 297.809 427.657 297.809L427.477 296.997L427.567 295.734L427.026 293.48C427.026 293.48 427.567 292.848 427.838 293.389C428.108 293.93 428.83 293.66 428.559 293.119C428.289 292.578 427.567 292.036 427.567 292.036C427.567 292.036 427.838 291.495 428.199 291.315C428.559 291.135 428.65 290.774 428.65 290.413C428.65 290.052 428.469 288.88 429.011 289.241C429.552 289.601 430.454 289.331 430.093 288.609C429.732 287.888 429.011 285.813 429.011 285.002C429.011 284.19 429.011 283.017 429.011 283.017L430.725 279.951H431.988L432.168 279.229L433.251 279.32L433.973 278.508L435.957 278.598C435.957 278.598 436.138 278.147 435.867 277.696C435.597 277.245 436.048 276.794 436.679 276.163C437.311 275.532 437.221 274.63 437.221 274.63L437.04 272.375C437.04 272.375 438.574 272.285 439.115 272.285C439.656 272.285 440.92 272.285 441.28 271.924C441.641 271.563 442.363 271.563 442.724 271.203C443.085 270.842 443.536 270.12 443.536 270.12C443.536 270.12 443.987 270.571 444.438 270.391C444.889 270.21 445.34 269.579 445.34 269.579C445.34 269.579 445.431 270.391 446.874 270.391C448.318 270.391 449.039 270.391 449.039 270.391C449.039 270.391 449.4 270.752 450.032 270.752C450.663 270.752 451.295 270.752 451.656 270.391C452.017 270.03 452.287 269.489 452.287 269.489C452.287 269.489 453.37 269.128 453.731 268.587C454.092 268.046 454.182 267.685 454.182 267.685L454.813 268.316C454.813 268.316 455.535 268.046 455.445 267.505C455.355 266.964 455.084 266.152 455.445 265.881C455.806 265.611 456.257 265.07 456.528 265.521C456.798 265.971 457.159 266.783 457.159 266.783H458.963C458.963 266.783 459.866 264.528 460.497 264.258C461.129 263.987 460.948 262.905 460.948 262.905L462.392 261.733C462.392 261.733 462.211 261.101 462.933 260.65C463.655 260.199 464.016 259.929 464.016 259.929L464.196 260.921C464.196 260.921 466.542 260.56 466.993 260.38C467.444 260.199 467.715 260.109 468.076 260.47C468.437 260.831 469.339 261.552 469.339 261.552L471.504 260.921C471.504 260.921 471.865 262.544 471.865 263.356C471.865 264.168 471.775 264.168 472.316 264.709C472.857 265.25 472.948 265.611 472.948 266.242C472.948 266.873 472.677 267.595 472.496 268.046C472.316 268.497 470.963 270.752 470.963 270.752L469.97 271.383C469.97 271.383 469.79 273.006 469.429 273.457C469.068 273.908 468.978 274.9 468.978 274.9C468.978 274.9 467.805 275.802 467.805 276.343C467.805 276.885 467.264 278.147 467.264 278.147L466.542 278.598L466.813 280.131L467.625 281.394C467.625 281.394 468.527 281.484 468.797 281.935C469.068 282.386 469.429 283.739 469.068 284.1C468.707 284.461 468.076 285.182 468.076 285.182L467.805 287.076L468.888 288.248C468.888 288.248 469.249 288.97 469.158 289.421C469.068 289.872 468.256 292.036 468.256 292.036L468.797 294.381C468.797 294.381 470.872 293.66 471.504 293.66C472.136 293.66 474.12 293.84 474.12 293.84L473.489 295.013C473.489 295.013 473.399 296.456 473.218 296.907C473.038 297.358 472.587 297.809 472.587 297.809H471.504L471.053 298.44L471.684 298.891C471.684 298.891 470.963 299.432 471.324 299.973C471.684 300.514 472.406 301.056 472.406 301.056C472.406 301.056 473.128 302.048 472.767 303.31C472.406 304.573 469.519 309.804 469.339 310.255C469.158 310.706 468.346 312.329 468.346 312.329L467.625 312.87L468.707 313.682C468.707 313.682 472.136 313.592 472.677 313.682C473.218 313.772 474.842 314.133 475.925 314.404C477.007 314.674 477.188 314.674 477.729 314.584C478.27 314.494 479.624 314.404 479.624 314.404L479.894 314.855H480.797L482.33 313.412L483.593 312.78L483.503 312.059C483.503 312.059 483.323 311.518 483.864 311.157C484.405 310.796 485.037 310.616 484.947 310.075C484.857 309.533 484.766 308.902 485.127 308.722C485.488 308.541 487.473 308.181 487.834 307.82C488.195 307.459 489.007 306.467 489.097 306.106C489.187 305.745 490.089 304.032 490.721 303.581C491.352 303.13 491.172 302.499 491.443 302.048C491.713 301.597 491.984 301.146 492.435 300.785C492.886 300.424 493.337 300.605 493.157 301.146C492.976 301.687 493.247 302.048 493.608 302.408C493.969 302.769 494.6 302.95 494.961 303.31C495.322 303.671 496.224 304.573 496.224 304.573"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M430.634 279.951L428.83 278.237C428.83 278.237 428.018 278.598 427.206 278.598C426.394 278.598 425.943 278.869 423.868 278.778C421.793 278.688 419.357 278.237 419.357 278.237"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M443.806 406.308L447.325 407.841L447.415 409.013C447.415 409.013 447.776 408.833 448.498 409.374C449.219 409.915 448.949 410.096 448.678 410.456C448.407 410.817 447.415 410.998 448.768 411.358C450.122 411.719 452.918 412.711 452.918 412.711L453.821 411.629L455.174 411.178L456.347 411.539L456.798 409.825L458.963 409.915C458.963 409.915 459.775 410.998 460.407 410.727C461.038 410.456 461.579 409.735 461.67 409.374C461.76 409.013 462.391 408.292 462.391 408.292C462.391 408.292 464.106 408.923 464.647 409.013C465.188 409.104 466.632 409.555 466.632 409.555V410.456H468.346L469.97 411.449C469.97 411.449 470.06 410.998 470.692 410.907C471.323 410.817 471.864 409.915 471.864 409.915C471.864 409.915 472.947 410.006 473.128 409.374C473.308 408.743 473.488 407.841 473.488 407.841L475.834 407.661L476.646 408.562L477.729 408.653C477.729 408.653 478.631 409.825 478.09 410.547C477.548 411.268 477.007 412.17 477.007 412.17L479.353 413.343L480.165 411.99L481.067 412.531L482.059 411.9L482.962 413.072L484.405 411.719L486.029 413.072L486.931 410.366L487.924 409.645C487.924 409.645 488.736 410.006 489.187 409.645C489.638 409.284 490.179 408.653 490.179 408.653L491.172 409.374L492.615 409.464L494.149 406.759H495.502L497.306 407.661L497.667 406.398L499.021 406.218L500.193 406.668L501.186 407.3L504.524 408.382"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M550.356 272.645L552.07 269.85L552.972 270.12L553.604 268.677L554.506 268.497L554.145 263.356L557.754 261.372L564.52 258.035L565.874 255.6L566.235 253.796L566.054 252.443L566.415 251L567.317 250.729L568.039 251L568.58 250.278H569.573L570.565 249.467L571.828 249.106L572.009 248.024L573.182 247.482L574.354 247.122C574.354 247.122 574.354 246.22 574.625 245.679C574.896 245.137 575.166 244.777 575.166 244.777L576.79 244.145L576.249 242.792L576.61 241.891L575.437 239.095L575.978 238.554L576.7 239.185L577.963 239.365L578.775 240.357L581.752 242.792L584.91 244.596L586.714 239.455L590.684 228.633L596.097 223.672L594.834 222.86L594.293 222.229L591.677 223.672L591.045 222.409L591.586 221.237C591.586 221.237 591.406 220.425 591.677 220.064C591.947 219.704 592.037 218.351 592.037 218.351C592.037 218.351 591.767 216.998 591.406 216.547C591.045 216.096 591.225 215.104 591.225 215.104L592.849 214.653L594.383 214.112L597.631 214.022L597.27 212.939L597 210.144"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M504.253 290.864V286.174L513.636 271.924L514.99 270.481L515.08 268.948L516.253 263.897L516.343 261.642L514.719 259.297L513.726 258.936L513.907 257.674L512.554 256.682L511.742 257.313L510.659 256.862L507.952 253.796L506.328 252.172L504.344 250.459L503.441 251.631L502.629 251.902L501.817 250.729L500.915 249.917L499.923 249.827L498.66 250.819L496.675 247.573L495.502 247.753C495.502 247.753 494.871 245.859 494.871 245.318C494.871 244.777 494.69 243.334 494.69 243.334L494.871 240.898L494.239 239.636L491.803 237.471L489.818 237.201L489.638 236.028L488.645 235.848L488.014 233.683L489.367 233.052L488.736 232.24L489.096 231.519L487.743 230.797L487.472 228.272L486.029 227.55C486.029 227.55 487.472 225.386 486.931 224.484C486.39 223.582 484.856 220.064 484.856 220.064L483.683 217.629L483.052 217.719L482.51 215.735L482.781 214.833L481.338 212.308C481.338 212.308 480.886 211.857 481.428 211.316C481.969 210.775 482.15 210.504 482.059 209.963C481.969 209.422 481.879 209.061 481.879 209.061L481.067 208.7L481.157 207.348L481.879 206.626L483.593 208.069L485.307 207.708L484.946 206.536L484.134 206.356L483.683 205.814L484.405 204.642L485.578 204.462L485.849 203.65L485.939 202.297L486.48 201.395V200.764L487.292 200.313"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M310.106 499.384L308.116 505.247L302.793 506.509L301.169 509.035C301.169 509.035 299.545 510.027 299.274 510.388C299.003 510.748 298.282 511.109 297.74 511.65C297.199 512.191 294.583 515.438 294.583 515.438C294.583 515.438 293.5 516.34 293.049 516.611C292.598 516.881 291.786 517.693 291.786 517.693L290.433 521.12C290.433 521.12 287.636 521.481 287.004 521.571C286.373 521.661 284.839 521.932 283.305 522.563C281.772 523.195 280.96 525.179 280.599 525.81C280.238 526.441 279.877 527.163 279.065 527.524C279.065 527.524 277.712 528.696 277.17 529.508C276.629 530.32 276.358 530.229 275.546 531.402C274.734 532.574 273.02 532.033 272.298 532.304C271.577 532.574 271.577 533.657 271.577 534.108C271.577 534.559 270.494 536.002 270.494 536.002C270.494 536.002 270.494 536.903 270.404 537.805C270.314 538.707 270.043 538.347 268.96 538.888C267.878 539.429 267.517 538.888 266.795 538.347C266.073 537.805 265.171 538.076 264.54 538.076C263.908 538.076 263.276 538.166 262.465 538.617C261.653 539.068 259.493 538.166 259.493 538.166L257.593 538.076C257.593 538.076 255.969 540.06 255.878 540.421C255.788 540.782 254.796 541.142 254.796 541.142C254.796 541.142 253.803 541.052 252.991 540.601C252.179 540.15 251.007 540.511 250.555 540.962C250.104 541.413 249.563 541.864 248.48 542.495C247.398 543.127 246.947 545.832 246.766 546.554C246.586 547.275 245.142 548.087 244.33 548.448C243.518 548.809 241.082 549.53 240.451 549.62C239.819 549.711 239.188 550.342 239.188 550.342C239.188 550.342 236.391 554.04 236.12 554.4C235.85 554.761 234.767 556.655 234.496 557.196C234.226 557.737 233.865 557.828 233.233 557.647C232.602 557.467 232.331 557.287 232.331 557.287L231.609 556.385L228.091 559.271C228.091 559.271 227.64 560.082 227.459 560.533C227.279 560.984 226.377 561.345 226.377 561.345L225.204 562.698C225.204 562.698 222.497 563.329 221.685 563.419C220.873 563.51 220.242 563.6 220.242 564.141C220.242 564.682 219.069 565.584 218.437 565.674C217.806 565.764 217.355 566.486 217.355 566.486V568.109C217.355 568.109 214.558 570.545 214.107 570.905C213.656 571.266 213.114 571.086 212.393 570.545C211.671 570.003 211.039 569.643 210.678 569.733C210.318 569.823 208.423 570.454 207.972 570.635C207.521 570.815 207.07 571.356 206.799 571.988C206.528 572.619 205.626 573.07 205.626 573.07C205.626 573.07 204.183 574.423 203.731 574.874C203.28 575.325 202.108 575.505 201.476 575.505C200.844 575.505 199.401 575.234 199.401 575.234C199.401 575.234 196.875 576.046 196.063 576.317C195.251 576.587 194.619 577.309 194.258 577.76C193.898 578.211 191.822 579.383 191.822 579.383C191.822 579.383 189.477 581.097 188.935 581.367C188.394 581.638 188.665 582.72 188.845 583.442C189.026 584.163 188.214 584.885 187.853 585.155C187.492 585.426 185.778 587.14 184.966 587.771C184.154 588.402 183.703 590.296 183.432 591.018C183.161 591.739 181.447 593.272 180.455 593.814C179.462 594.355 179.553 594.355 179.282 594.896C179.011 595.437 178.109 595.978 177.297 595.978C176.485 595.978 175.673 596.79 175.673 596.79L172.335 600.488L170.17 602.562L168.456 604.005"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M243.53 662.719L233.775 660.825L228.182 659.472C228.182 659.472 225.926 660.014 225.565 660.014C225.204 660.014 223.941 660.014 223.941 660.014L217.716 660.916C217.716 660.916 216.724 662.81 216.724 663.17C216.724 663.531 216.453 663.711 215.822 663.802C215.19 663.892 215.28 664.343 215.28 664.343L214.198 664.794C214.198 664.794 213.115 665.154 212.393 665.605C211.671 666.056 211.13 666.958 210.679 667.59C210.228 668.221 210.048 668.942 208.604 669.664C207.16 670.385 207.521 670.205 206.258 671.468C204.995 672.73 204.634 672.009 204.093 671.378C203.552 670.746 202.565 669.033 202.565 669.033C201.663 667.95 202.289 666.417 202.289 666.417C202.289 666.417 202.83 665.154 203.101 664.704C203.371 664.253 203.552 663.802 203.191 663.351C202.83 662.9 202.559 662.449 202.198 661.276C201.838 660.104 199.853 660.916 199.853 660.916L197.597 661.817C197.597 661.817 195.522 662.449 194.891 662.719C194.259 662.99 192.545 663.351 191.552 663.17C190.56 662.99 189.207 662.178 189.207 662.178C189.207 662.178 187.763 660.374 187.493 659.923C187.222 659.472 186.771 659.022 185.959 658.39C185.147 657.759 184.786 657.218 184.696 656.857C184.606 656.496 183.974 653.971 183.884 653.249C183.794 652.528 183.342 651.896 182.891 651.355C182.44 650.814 182.531 649.732 182.44 649.101C182.35 648.469 182.17 647.387 181.719 646.305C181.267 645.222 179.734 645.313 179.283 645.403C178.831 645.493 177.478 645.854 177.027 645.944C176.576 646.034 175.584 646.214 175.584 646.214C175.584 646.214 174.681 645.944 174.23 645.764L173.509 644.952C173.509 644.952 173.238 644.23 173.238 643.689C173.238 643.148 172.877 641.976 172.516 641.525C172.155 641.074 171.704 641.164 171.433 641.795C171.163 642.426 170.622 643.419 170.622 643.419L167.734 641.976C167.734 641.976 167.734 640.713 167.825 639.991C167.915 639.27 168.366 638.368 168.366 638.368L166.922 636.654L167.734 634.85L166.471 634.219C166.471 634.219 165.389 634.58 165.028 634.85C164.667 635.121 164.216 635.301 163.133 634.58C162.051 633.858 162.953 631.062 163.223 630.612C163.494 630.161 163.584 628.898 163.765 628.357C163.945 627.816 163.855 626.463 163.675 625.922C163.494 625.38 163.494 624.479 163.675 623.847C163.855 623.216 164.126 621.773 164.035 621.412C163.945 621.051 162.321 619.338 162.321 619.338C162.321 619.338 162.412 618.616 163.133 617.805C163.855 616.993 166.111 613.205 166.201 612.844C166.291 612.483 167.013 611.852 167.193 611.13C167.374 610.409 167.283 609.327 168.186 609.236C169.088 609.146 168.907 608.064 168.907 608.064L168.456 604.005"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M146.639 767.61L145.45 766.709L142.833 766.438C142.833 766.438 142.202 765.626 141.931 765.175C141.66 764.724 141.841 764.093 141.841 764.093C141.841 764.093 142.833 763.913 143.375 763.642C143.916 763.371 145.269 761.477 145.269 761.477C145.269 761.477 144.367 761.207 143.826 761.207C143.284 761.207 143.465 760.756 143.014 760.395C142.563 760.034 141.48 759.583 141.48 759.583L141.39 757.329C141.39 757.329 142.202 756.697 142.292 756.156C142.382 755.615 142.202 754.803 141.751 754.262C141.299 753.721 140.488 753.541 140.488 753.541L139.495 753.451V751.737C139.495 751.737 140.127 751.286 140.758 750.835C141.39 750.384 142.382 749.031 142.653 748.58C142.923 748.129 143.104 746.867 142.833 746.055C142.563 745.243 143.104 744.792 143.465 744.341C143.826 743.89 143.555 743.079 143.375 742.718C143.194 742.357 142.202 740.102 142.202 740.102C142.202 740.102 141.299 738.299 140.848 737.577C140.397 736.855 140.848 736.405 141.029 736.044C141.209 735.683 142.202 733.879 142.202 733.879C142.202 733.879 142.021 732.346 141.841 731.895C141.66 731.444 141.299 730.903 140.939 730.903C140.578 730.903 139.585 730.813 138.954 730.542C138.322 730.272 137.781 729.911 137.781 729.911C137.781 729.911 136.969 728.107 136.698 727.476C136.428 726.844 136.698 726.213 137.42 725.942C138.142 725.672 137.781 724.95 137.691 724.499C137.6 724.048 137.961 722.786 138.412 722.154C138.864 721.523 138.593 721.162 138.232 720.802C137.871 720.441 137.871 720.17 137.51 719.449C137.149 718.727 136.969 718.727 136.428 719.088C135.886 719.449 135.074 719.719 134.082 719.719C133.09 719.719 133.631 718.637 133.631 718.637C133.631 718.637 134.533 717.915 134.894 717.465C135.255 717.014 134.623 716.472 134.623 716.472C134.623 716.472 133.901 715.571 133.541 714.939C133.18 714.308 132.999 713.135 132.909 712.594C132.819 712.053 133.09 710.7 133.09 710.7L134.172 708.806L134.713 707.093C134.713 707.093 135.345 706.822 135.706 706.642C136.067 706.461 136.518 705.83 136.698 705.469C136.879 705.108 138.232 702.403 138.232 702.403L138.683 701.05L140.127 695.097L141.48 694.466L143.375 693.835C143.375 693.835 144.367 691.85 144.547 691.219C144.728 690.588 144.277 690.588 143.465 690.768C142.653 690.949 142.472 690.498 142.021 690.047C141.57 689.596 140.939 688.513 140.848 688.062C140.758 687.612 140.036 687.341 139.405 687.251C138.773 687.161 138.142 686.529 138.142 686.529C138.142 686.529 137.781 684.725 137.51 683.914C137.24 683.102 136.698 683.373 136.698 683.373L131.195 688.243L130.202 690.588C130.202 690.588 128.398 693.564 127.406 694.827L126.594 695.548L125.421 695.278L124.699 694.105L123.616 694.917C123.616 694.917 122.714 694.737 122.173 694.466C121.632 694.195 120.549 693.203 120.549 693.203L120.639 689.596L119.376 689.686L116.579 687.521C116.579 687.521 116.76 685.898 116.76 684.816C116.76 683.733 115.683 682.11 115.683 682.11L114.234 682.2C114.234 682.2 113.782 683.012 113.692 683.373C113.602 683.733 114.053 684.725 112.519 684.725C110.986 684.725 110.715 685.718 110.715 685.718C110.715 685.718 110.895 686.529 109.452 686.71C108.008 686.89 107.106 686.98 107.106 686.98L102.601 687.251C102.06 687.341 100.159 687.431 99.618 687.431C99.0767 687.431 97.8136 687.07 97.8136 687.07L96.9114 684.004C96.9114 684.004 96.6407 682.922 96.731 682.471C96.8212 682.02 96.731 681.028 96.6407 680.667C96.5505 680.306 95.4679 679.855 94.7461 679.314C94.0244 678.773 93.5733 676.338 93.3928 675.887C93.2124 675.436 93.5733 674.624 93.5733 674.624C93.5733 674.624 94.4755 673.993 94.9266 673.812C95.3777 673.632 95.7385 672.73 95.7385 672.73C95.7385 672.73 96.3701 670.475 96.6407 669.934C96.9114 669.393 96.1896 668.491 95.5581 668.762C94.9266 669.032 93.2124 669.032 93.2124 669.032C93.2124 669.032 92.4004 667.95 91.8591 667.409C91.3178 666.868 89.784 665.966 89.784 665.966L89.5134 664.703L87.4383 663.35C87.4383 663.35 87.709 662.178 87.2579 661.366C86.8068 660.554 86.5361 659.562 86.5361 659.562L87.0775 656.045H88.7916C88.7916 656.045 89.8743 653.7 90.3254 653.069C90.7765 652.437 90.9569 651.084 90.9569 651.084C90.9569 651.084 89.784 651.986 89.5134 650.453C89.2427 648.92 89.6938 648.018 89.9645 647.567C90.2351 647.116 89.784 646.124 89.9645 645.673C90.1449 645.222 91.1373 642.967 91.408 642.607C91.6787 642.246 92.22 641.344 92.22 640.893C92.22 640.442 92.6711 638.187 92.6711 638.187C92.6711 638.187 94.0272 637.533 94.2986 636.961C94.57 636.388 94.7512 635.489 96.0171 635.489C97.2831 635.489 103.433 635.407 103.433 635.407C103.433 635.407 105.784 634.262 106.327 633.853C106.869 633.444 107.503 633.117 108.679 632.872C109.854 632.626 111.21 632.872 112.567 631.809C113.923 630.746 114.828 630.01 115.099 629.682C115.37 629.355 116.003 629.192 116.365 629.519C116.727 629.846 118.717 630.745 118.717 630.745L119.169 628.783L120.797 628.619L124.052 626.657L124.143 623.304C124.143 623.304 124.685 623.386 124.685 622.65C124.685 621.914 124.685 621.178 124.685 621.178L125.771 620.442C125.771 620.442 127.489 618.561 128.393 618.561C129.298 618.561 130.383 618.316 130.383 618.316L130.655 616.68H131.649L131.288 615.045L132.825 614.636L133.549 613.491L136.533 612.755C136.533 612.755 137.528 612.919 139.246 611.937C140.965 610.956 141.327 611.692 141.417 612.101C141.507 612.51 142.502 612.755 143.226 612.755C143.949 612.755 145.125 612.755 145.758 612.673C146.391 612.591 147.114 612.427 147.295 611.774C147.476 611.12 148.019 610.219 148.019 610.219L149.647 610.056C149.647 610.056 150.099 611.691 150.823 612.182C151.546 612.673 152.36 613.082 152.903 613.082C153.445 613.082 153.626 612.51 154.44 612.1C155.254 611.691 155.797 611.201 155.797 611.201L156.249 610.138L158.962 609.811L159.686 608.748C159.686 608.748 161.042 608.585 161.404 608.585C161.766 608.585 163.303 608.421 163.303 608.421L163.574 605.641L163.755 604.087C163.755 604.087 165.022 604.25 165.654 604.169C166.288 604.087 168.458 604.005 168.458 604.005"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M412.179 129.925L412.54 128.753L413.352 128.663L414.524 127.716L414.615 126.543L415.517 125.777L416.599 126.002L416.69 125.01L417.643 124.913L417.592 123.612L418.72 122.575"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M85.2729 622.223C85.2729 622.223 85.9947 622.133 86.8067 622.674C87.6187 623.216 88.4306 623.757 89.1524 623.666C89.8742 623.576 90.5057 623.486 91.2274 623.125C91.9492 622.765 92.7612 622.494 93.1221 622.494C93.4829 622.494 94.5656 622.314 95.2873 623.035C96.0091 623.757 95.7384 623.937 96.5504 623.937C97.3624 623.937 98.5352 623.937 98.5352 623.937C98.5352 623.937 99.0766 625.29 99.0766 625.831C99.0766 626.372 98.9863 626.913 99.6179 627.274C100.249 627.635 101.512 627.996 101.512 627.996C101.512 627.996 101.964 629.258 100.881 629.529C99.7983 629.799 99.1668 629.98 99.1668 629.98C99.1668 629.98 98.8961 630.791 98.8961 631.693C98.8961 632.595 98.445 633.497 98.445 633.497L97.3624 635.391"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
+        strokeLinejoin="round"
+      />
       <path
         d="M457.578 139.866H469.179"
         stroke="#F6F6F6"
         strokeWidth="1.9843"
         strokeMiterlimit="3.8637"
-        strokeLinejoin="round"></path>
-      <circle cx="106" cy="755" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="209" cy="715" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="326" cy="590" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="355" cy="437" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="464" cy="427" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="464" cy="376" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="509" cy="326" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="451" cy="329" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="419" cy="294" r="2.5" fill="white" stroke="black"></circle>
-
-      <circle cx="483" cy="270" r="2.5" fill="white" stroke="black" city="Hamilton"></circle>
-      {taken.includes("Hamilton") ? <TakenPin x="483" y="270" /> : <AvailablePin x="483" y="270" />}
-      <circle cx="535" cy="316" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="592" cy="250" r="2.5" fill="white" stroke="black"></circle>
-
-      <circle cx="508" cy="230" r="2.5" fill="white" stroke="black" city="Tauranga"></circle>
-      <Pin isTaken={taken.includes("Tauranga")} x="508" y="230" />
-
-      <circle cx="453" cy="196" r="2.5" fill="white" stroke="black" city="Auckland"></circle>
-      {taken.includes("Auckland") ? <TakenPin x="453" y="196" /> : <AvailablePin x="453" y="196" />}
-      <circle cx="420" cy="134" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="403" cy="76" r="2.5" fill="white" stroke="black"></circle>
-      <circle cx="356" cy="56" r="2.5" fill="white" stroke="black"></circle>
+        strokeLinejoin="round"
+      />
+      {pins.map((pin) => (
+        <Pin key={pin.title} x={pin.x} y={pin.y} isTaken={taken.includes(pin.title)} />
+      ))}
+      {/* <circle cx="106" cy="755" r="2.5" fill="white" stroke="black" />
+      <circle cx="210" cy="719" r="2.5" fill="white" stroke="black" />
+      <circle cx="326" cy="590" r="2.5" fill="white" stroke="black" />
+      <circle cx="355" cy="437" r="2.5" fill="white" stroke="black" />
+      <circle cx="464" cy="427" r="2.5" fill="white" stroke="black" />
+      <circle cx="464" cy="376" r="2.5" fill="white" stroke="black" />
+      <circle cx="532" cy="343" r="2.5" fill="white" stroke="black" />
+      <circle cx="428" cy="350" r="2.5" fill="white" stroke="black" />
+      <circle cx="419" cy="294" r="2.5" fill="white" stroke="black" />
+      <circle cx="490" cy="280" r="2.5" fill="white" stroke="black" />
+      <circle cx="535" cy="330" r="2.5" fill="white" stroke="black" />
+      <circle cx="587" cy="279" r="2.5" fill="white" stroke="black" />
+      <circle cx="514" cy="246" r="2.5" fill="white" stroke="black" />
+      <circle cx="508" cy="230" r="2.5" fill="white" stroke="black" />
+      <circle cx="451" cy="229" r="2.5" fill="white" stroke="black" />
+      <circle cx="430" cy="170" r="2.5" fill="white" stroke="black" />
+      <circle cx="403" cy="76" r="2.5" fill="white" stroke="black" /> */}
     </svg>
   );
 }

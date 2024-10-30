@@ -7,6 +7,7 @@ import MarketingPlan from "./components/MarketingPlan/MarketingPlan";
 import PricingPlans from "./components/PricingPlans/PricingPlans";
 import ReadyToStart from "./components/ReadyToStart/ReadyToStart";
 import ServiceAvailability from "./components/ServiceAvailability/ServiceAvailability";
+import SignUp from "./components/SignUp/SignUp";
 import SomeServices from "./components/SomeServices/SomeServices";
 import WeHelp from "./components/WeHelp/WeHelp";
 import WhatIncluded from "./components/WhatIncluded/WhatIncluded";
@@ -26,6 +27,7 @@ export default function Home() {
       <ContactUs />
       <ReadyToStart />
       <Footer />
+      <SignUp />
     </>
   );
 }

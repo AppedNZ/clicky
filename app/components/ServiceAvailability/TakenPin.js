@@ -5,6 +5,7 @@ export default function TakenPin({ x, y }) {
       y={y - 30}
       width="32"
       height="32"
+      className="scale-up"
       viewBox="0 0 40 41"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">

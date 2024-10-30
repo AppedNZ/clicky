@@ -5,6 +5,7 @@ import Image from "next/image";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { triggerSignUpEvent } from "../../utils/customEvents";
 import Button from "../Button";
 import styles from "./GetMore.module.scss";
 export default function GetMore() {
@@ -43,7 +44,12 @@ export default function GetMore() {
               is why we have put together a simple and proven killer search marketing combo for
               service based businesses to get more phone calls and leads.
             </p>
-            <Button size="medium" addClassName="max-w-[230px] ">
+            <Button
+              size="medium"
+              addClassName="max-w-[230px] "
+              onClick={() => {
+                triggerSignUpEvent({});
+              }}>
               let&apos;s go{" "}
             </Button>
           </div>

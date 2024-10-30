@@ -1,7 +1,8 @@
+"use client";
 import { CheckIcon } from "@heroicons/react/24/solid";
 import Button from "../Button";
 import styles from "./Plan.module.scss";
-export default function Plan({ plan }) {
+export default function Plan({ plan, onClick = () => {} }) {
   const { title, price, features } = plan;
   return (
     <div className={styles.plan}>
@@ -15,7 +16,9 @@ export default function Plan({ plan }) {
           </li>
         ))}
       </ul>
-      <Button>Select Plan</Button>
+      <Button addClassName="mt-auto" onClick={onClick}>
+        Select Plan
+      </Button>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Button from "../Button";
 import DropDown from "../DropDown";
 import Heading from "../Heading";
 import DropDownIcon from "../Icons/DropDownIcon";
+import ServiceSelect from "../ServiceSelect";
 import styles from "./ServiceAvailability.module.scss";
 import ServiceAvailabilityMap from "./ServiceAvailabilityMap";
 const whats_taken = {
@@ -63,26 +64,21 @@ export default function ServiceAvailability() {
                 <DropDownIcon />
               </div>
             </div>
-            <div className={`${styles.selectWrapper} mb-10`}>
-              <label className="flex-shrink-0" htmlFor="service">
-                Region:
-              </label>
-              <div className="w-full flex items-center gap-2.5">
-                <DropDown
-                  options={locations}
-                  onSelect={setLocation}
-                  current_pick={location}
-                  triggerComponent={({ onClick, isOpen }) => (
-                    <div
-                      onClick={onClick}
-                      className={`${styles.select} cursor-pointer ${styles?.location}`}>
-                      {location.title}{" "}
-                    </div>
-                  )}
-                />
-                <DropDownIcon />
-              </div>
-            </div>
+            <ServiceSelect
+              placeholder={"Service:"}
+              colored
+              value={pickedService}
+              options={services}
+              selectValueFn={setPickedService}
+              addClassNames="mb-10"
+            />
+            <ServiceSelect
+              placeholder={"Region:"}
+              value={location}
+              options={locations}
+              selectValueFn={setLocation}
+              addClassNames="mb-10"
+            />
 
             <div
               className={`${styles.availability} ${
