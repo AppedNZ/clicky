@@ -16,6 +16,7 @@
   }
 }
 .image {
+  @apply max-lg:w-full max-lg:h-auto;
   flex: 1 1 60%;
   max-width: 828px;
 }

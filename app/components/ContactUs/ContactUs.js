@@ -12,7 +12,7 @@ export default function ContactUs() {
             0800 249 203
           </a>
         </p>
-        <form className=" mt-6 grid lg:grid-cols-3 gap-6 lg:gap-8 2xl:gap-10 text-black text-xl leading-none w-full p-6 lg:p-8 2xl:p-16 bg-white rounded-[20px] shadow">
+        <form className=" mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 2xl:gap-10 text-black text-xl leading-none w-full p-6 lg:p-8 2xl:p-16 bg-white rounded-[20px] shadow">
           <input
             type="text"
             placeholder="Name"
@@ -37,7 +37,7 @@ export default function ContactUs() {
             required
             className="bg-[#F1F1F1] w-full rounded-[10px] p-5 xl:p-7 lg:col-span-3 resize-none"
           />
-          <Button type="submit" addClassName="col-span-3">
+          <Button type="submit" addClassName="lg:col-span-3">
             Submit
           </Button>
         </form>

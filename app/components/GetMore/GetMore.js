@@ -10,10 +10,10 @@ import Button from "../Button";
 import styles from "./GetMore.module.scss";
 export default function GetMore() {
   return (
-    <div className=" w-11/12  mx-auto 2xl:wrap  relative py-10 xl:py-16">
+    <div className=" w-11/12  mx-auto 2xl:wrap  relative py-10 xl:py-16 max-lg:flex max-lg:flex-wrap max-lg:justify-center gap-3 gap-x-6">
       <Button
         id="getmore-prev"
-        addClassName="ml-auto absolute left-0 top-1/2 -translate-y-1/2 -translate-x-full"
+        addClassName="max-lg:order-1  lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 lg:-translate-x-full"
         size="small"
         color="primary">
         <ChevronLeftIcon className="w-4 text-white stroke stroke-white " />
@@ -22,7 +22,7 @@ export default function GetMore() {
         id="getmore-next"
         size="small"
         color="primary"
-        addClassName=" absolute right-0 translate-x-full top-1/2 -translate-y-1/2">
+        addClassName="max-lg:order-1  lg:absolute right-0 lg:translate-x-full lg:top-1/2 lg:-translate-y-1/2">
         <ChevronLeftIcon className="w-4 text-white stroke stroke-white rotate-180" />
       </Button>
 
@@ -36,17 +36,17 @@ export default function GetMore() {
         slidesPerView={1}>
         <SwiperSlide className={`${styles.slide} `}>
           <div className={styles.side}>
-            <h3 className="text-black font-extrabold uppercase  leading-none ">
+            <h3 className="text-black font-extrabold uppercase  leading-none max-lg:text-center ">
               get more calls and enquiries
             </h3>
-            <p>
+            <p className="max-lg:text-center">
               When it comes to digital marketing we understand that things can be complicated. That
               is why we have put together a simple and proven killer search marketing combo for
               service based businesses to get more phone calls and leads.
             </p>
             <Button
               size="medium"
-              addClassName="max-w-[230px] "
+              addClassName="lg:max-w-[230px] "
               onClick={() => {
                 triggerSignUpEvent({});
               }}>

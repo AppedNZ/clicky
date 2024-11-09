@@ -2,18 +2,38 @@
   background-color: #f59101;
 }
 .logo {
+  @apply max-lg:mt-6 max-lg:mb-10;
   width: clamp(146px, 33%, 278px);
 }
 .heading {
-  @apply relative z-10 inline-flex items-center gap-2 leading-none text-white uppercase;
+  @apply relative z-10 inline-flex flex-col lg:flex-row items-center gap-2 text-white uppercase;
   max-width: max-content;
   overflow: hidden;
   transition: all 0.5s;
   font-size: clamp(29px, 3.5vw, 48px);
   font-weight: 600;
+  line-height: 0.8;
 }
-
+.secure {
+  @apply leading-none mt-5 max-lg:mb-20 max-lg:text-balance lg:mt-7 flex justify-center gap-2 items-center;
+  font-size: clamp(14px, 3.5vw, 28px);
+}
 .subheading {
-  @apply text-white uppercase font-extrabold leading-none;
+  @apply text-white uppercase font-extrabold leading-none max-lg:text-center;
   font-size: clamp(36px, 5.5vw, 96px);
+}
+@media (max-width: 1023px) {
+  .heading {
+    font-size: clamp(36px, 8.5vw, 96px);
+    span {
+      font-size: clamp(58px, 16.5vw, 96px);
+    }
+  }
+
+  .subheading {
+    font-size: clamp(48px, 14.5vw, 96px);
+    span {
+      font-size: clamp(38px, 11.5vw, 96px);
+    }
+  }
 }

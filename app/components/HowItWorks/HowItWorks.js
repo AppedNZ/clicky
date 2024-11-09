@@ -34,13 +34,13 @@ export default function HowItWorks() {
   return (
     <div className="wrap flex flex-col items-center gap-10  py-10 xl:py-14">
       <Heading>How It Works</Heading>
-      <div className="w-full grid lg:grid-cols-4 gap-2 xl:gap-6">
+      <div className="w-full grid lg:grid-cols-4 gap-10 xl:gap-6">
         {steps.map((step, i) => (
           <div
             key={i}
             className=" flex flex-col items-center gap-2 text-center text-black relative">
             {i !== 3 && (
-              <div className="absolute left-full top-[60px] -translate-x-[36%] w-[40%]  h-[3px] bg-primary flex justify-end items-center">
+              <div className="max-lg:hidden absolute left-full top-[60px] -translate-x-[36%] w-[40%]  h-[3px] bg-primary flex justify-end items-center">
                 <ChevronRightIcon className="w-4 stroke-2 stroke-primary text-primary relative translate-x-1/2" />
               </div>
             )}

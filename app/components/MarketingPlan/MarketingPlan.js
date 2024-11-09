@@ -39,11 +39,11 @@ export default function MarketingPlan() {
     <section className={`  text-black py-10 lg:py-14`}>
       <div className={`${styles.wrap} wrap`}>
         <div className={styles.leftSide}>
-          <p className="text-2xl font-extrabold uppercase leading-none">
+          <p className="text-lg lg:text-2xl font-extrabold uppercase leading-none max-lg:text-center">
             finally, a marketing plan
           </p>
-          <Heading>That gives You Measured Results</Heading>
-          <p className="italic text-2xl leading-relaxed my-4">
+          <Heading addClassName="max-lg:text-center">That gives You Measured Results</Heading>
+          <p className="italic lg:text-2xl leading-relaxed my-4 max-lg:text-center">
             We track everything for our campaigns, from the first keyword searched, until the moment
             your customer calls you fills our your contact form. We give you the best return on your
             investment possible.

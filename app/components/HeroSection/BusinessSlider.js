@@ -17,7 +17,7 @@ export default function BusinessSlider() {
         minWidth: "50px",
         overflow: "hidden",
       }}
-      className={`${styles.sliderWrapper} ${styles?.[service]}  relative transition-all duration-500 h-[calc(clamp(32px,2.5vw,48px)+32px)]`}
+      className={`${styles.sliderWrapper} ${styles?.[service]}  relative transition-all duration-500 h-[calc(clamp(28px,2.5vw,48px)+24px)] lg:h-[calc(clamp(32px,2.5vw,48px)+32px)]`}
       modules={[Autoplay]}
       onSwiper={(swiper) => {
         const currentSlide = swiper.slides.find((slide) =>

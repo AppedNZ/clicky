@@ -25,7 +25,7 @@ export default function TakenPin({ x, y }) {
           x2="20"
           y2="38.423"
           gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FF5656" />
+          <stop stopColor="#FF5656" />
           <stop offset="0.245" stopColor="#FF0000" />
           <stop offset="1" stopColor="#D70000" />
         </linearGradient>

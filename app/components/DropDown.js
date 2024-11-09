@@ -53,7 +53,7 @@ export default function DropDown({
       )}
 
       {isOpen && ( // Show dropdown if open
-        <div className={`${styles.dropdown}`}>
+        <div className={`${styles.dropdown}  z-20`}>
           {options &&
             options.map((option) => (
               <div

@@ -1,3 +1,7 @@
+.heading {
+  @apply text-black font-extrabold uppercase lg:text-3xl leading-none max-lg:text-center;
+  font-size: clamp(20px, 4vw, 28px);
+}
 .slide {
   @apply relative  overflow-hidden flex flex-col p-4 items-center justify-center gap-4;
   border-radius: 10px;
@@ -5,6 +9,7 @@
   box-shadow: 0px 10px 20px 0px #0000001a;
   height: 120px;
   background: #000;
+
   p,
   span {
     @apply relative z-10 text-white leading-none font-extrabold text-center uppercase;
@@ -33,5 +38,23 @@
   }
   &.lawnmowers {
     border-color: #15c300;
+  }
+}
+.button {
+  @apply text-white font-extrabold uppercase text-center p-3;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffba56 0%, #ff9700 24.5%, #eb8d00 100%);
+
+  &.prev {
+    @media (max-width: 1023px) {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+  &.next {
+    @media (max-width: 1023px) {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
   }
 }

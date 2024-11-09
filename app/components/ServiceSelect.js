@@ -14,7 +14,7 @@ export default function ServiceSelect({
       <label className="flex-shrink-0" htmlFor="service">
         {placeholder}
       </label>
-      <div className="w-full flex items-center gap-2.5">
+      <div className="w-full flex items-center gap-2.5 relative ">
         <DropDown
           options={options}
           onSelect={selectValueFn}
