@@ -36,7 +36,7 @@ export default function ServiceAvailability() {
     setSubmitted(false);
   }, [location.value, pickedService.value]);
   return (
-    <section id="map" className="bg-light-gray py-10 xl:py-20 3xl:py-32  items-center">
+    <section id="map" className="bg-light-gray py-10 xl:py-20 3xl:py-32  items-center scroll-mt-10">
       <div className="wrap flex flex-col items-center justify-between lg:flex-row gap-8 lg:gap-10 ">
         <Heading addClassName="lg:hidden">Availability</Heading>
         <div className="flex flex-col items-center lg:items-start max-lg:order-1 ">
