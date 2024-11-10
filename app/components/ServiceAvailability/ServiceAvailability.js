@@ -16,14 +16,29 @@ export default function ServiceAvailability() {
   const [location, setLocation] = useState(locations[0]);
   const [isAvailable, setIsAvailable] = useState(true);
   const [submitted, setSubmitted] = useState(false);
+  const [whatsTaken, setWhatsTaken] = useState();
+  useEffect(() => {
+    const fetchAvailabilityData = async () => {
+      try {
+        const response = await fetch("/api/getServicesAvailability");
+        const data = await response.json();
+
+        setWhatsTaken(data);
+      } catch (error) {
+        console.error("Error fetching availability data:", error);
+      }
+    };
+
+    fetchAvailabilityData();
+  }, []);
 
   useEffect(() => {
     setSubmitted(false);
   }, [location.value, pickedService.value]);
   return (
-    <section className="bg-light-gray py-10 xl:py-20 3xl:py-32  items-center">
+    <section id="map" className="bg-light-gray py-10 xl:py-20 3xl:py-32  items-center">
       <div className="wrap flex flex-col items-center justify-between lg:flex-row gap-8 lg:gap-10 ">
-        <Heading className="lg:hidden">Availability</Heading>
+        <Heading addClassName="lg:hidden">Availability</Heading>
         <div className="flex flex-col items-center lg:items-start max-lg:order-1 ">
           <Heading addClassName="max-lg:hidden">Availability</Heading>
           <form
@@ -73,10 +88,16 @@ export default function ServiceAvailability() {
           </form>
         </div>
         <div className="w-2/3 lg:w-1/2 max-w-[650px] ">
-          <ServiceAvailabilityMap
-            location={location.value}
-            taken={whats_taken?.[pickedService.value] ?? []}
-          />
+          {whatsTaken ? (
+            <ServiceAvailabilityMap
+              location={location.value}
+              taken={whatsTaken?.[pickedService.value] ?? []}
+            />
+          ) : (
+            <p className="text-center uppercase font-extrabold text-3xl text-black">
+              Checking Available Services...
+            </p>
+          )}
         </div>
       </div>
     </section>

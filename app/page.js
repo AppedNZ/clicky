@@ -1,6 +1,7 @@
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer";
 import GetMore from "./components/GetMore/GetMore";
+import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import MarketingPlan from "./components/MarketingPlan/MarketingPlan";
@@ -15,6 +16,7 @@ import WhatIncluded from "./components/WhatIncluded/WhatIncluded";
 export default function Home() {
   return (
     <>
+      <Header />
       <HeroSection />
       <WeHelp />
       <GetMore />

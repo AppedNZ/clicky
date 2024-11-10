@@ -67,7 +67,6 @@ export default function SomeServices() {
           wrapperClass={styles.wrapper}
           navigation={{ nextEl: "#service-next", prevEl: "#service-prev" }}
           spaceBetween={0}
-          loop
           breakpoints={{
             1024: {
               slidesPerView: 5,

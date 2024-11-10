@@ -3,7 +3,7 @@ import Heading from "../Heading";
 
 export default function ContactUs() {
   return (
-    <section className="bg-light-gray w-full py-10 lg:py-20 2xl:py-40">
+    <section id="contact-us" className="bg-light-gray w-full py-10 lg:py-20 2xl:py-40">
       <div className="wrap flex flex-col items-center gap-6">
         <Heading>Have Any Questions?</Heading>
         <p className="italic font-light text-2xl text-black">

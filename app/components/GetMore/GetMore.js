@@ -10,7 +10,9 @@ import Button from "../Button";
 import styles from "./GetMore.module.scss";
 export default function GetMore() {
   return (
-    <div className=" w-11/12  mx-auto 2xl:wrap  relative py-10 xl:py-16 max-lg:flex max-lg:flex-wrap max-lg:justify-center gap-3 gap-x-6">
+    <div
+      id="about-us"
+      className=" w-11/12  mx-auto 2xl:wrap  relative py-10 xl:py-16 max-lg:flex max-lg:flex-wrap max-lg:justify-center gap-3 gap-x-6">
       <Button
         id="getmore-prev"
         addClassName="max-lg:order-1  lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 lg:-translate-x-full"

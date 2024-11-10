@@ -32,7 +32,9 @@ const steps = [
 ];
 export default function HowItWorks() {
   return (
-    <div className="wrap flex flex-col items-center gap-10  py-10 xl:py-14">
+    <section
+      id="how-it-works"
+      className="wrap flex flex-col items-center gap-10  py-10 xl:py-14 scroll-m-5">
       <Heading>How It Works</Heading>
       <div className="w-full grid lg:grid-cols-4 gap-10 xl:gap-6">
         {steps.map((step, i) => (
@@ -52,6 +54,6 @@ export default function HowItWorks() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

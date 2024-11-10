@@ -7,7 +7,7 @@ export const locations = [
   { title: "Tauranga", value: "Tauranga" },
   { title: "Napier", value: "Napier" },
   { title: "Hastings", value: "Hastings" },
-  { title: "Dunedin", value: "Dunedin" },
+
   { title: "Palmerston North", value: "Palmerston North" },
   { title: "Nelson", value: "Nelson" },
   { title: "Rotorua", value: "Rotorua" },

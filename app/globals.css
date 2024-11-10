@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 
+html {
+  scroll-behavior: smooth;
+
+}
 
 body {
   color: white;
   background: white;
   font-family: 'Rubik', sans-serif;
+
 }
 
 @layer utilities {
