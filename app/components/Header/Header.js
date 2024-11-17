@@ -20,7 +20,7 @@ export default function Header() {
 
     // Attach the throttled handler to the window scroll event
     window.addEventListener("scroll", handleScroll);
-
+    handleScroll();
     // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -45,7 +45,7 @@ export default function Header() {
         scrolled ? "py-2 lg:py-3 opacity-100 shadow " : "py-3 lg:py-5 opacity-0 pointer-events-none"
       }`}>
       <div className="wrap  flex justify-between items-center">
-        <Logo className="fill-primary max-w-[160px] relative z-30" />
+        <Logo className="fill-primary max-w-[160px] relative z-0 opacity-0" />
         <button
           onClick={() => {
             setOpen((prev) => {

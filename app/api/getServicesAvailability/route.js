@@ -1,6 +1,8 @@
 export async function GET(req) {
   try {
-    const response = await fetch(process.env.NEXT_APP_SPREADSHEET_ROUTE);
+    const response = await fetch(process.env.NEXT_APP_SPREADSHEET_ROUTE, {
+      next: { revalidate: 3600 },
+    });
 
     if (!response.ok) {
       return new Response(JSON.stringify({ error: "Failed to fetch data" }), { status: 500 });

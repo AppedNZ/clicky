@@ -20,9 +20,11 @@ export default function ServiceAvailability() {
   useEffect(() => {
     const fetchAvailabilityData = async () => {
       try {
-        const response = await fetch("/api/getServicesAvailability");
+        const response = await fetch("/api/getServicesAvailability", {
+          next: { revalidate: 3600 },
+        });
         const data = await response.json();
-
+        console.log(data);
         setWhatsTaken(data);
       } catch (error) {
         console.error("Error fetching availability data:", error);

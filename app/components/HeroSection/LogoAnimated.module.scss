@@ -1,0 +1,45 @@
+.logo {
+  @apply fixed  z-40 left-1/2   top-0 transition-all duration-500;
+
+  /* Center it horizontally and place it vertically using clamp */
+  transform: translateY(74px) translateX(-50%);
+  > svg {
+    @apply absolute  fill-white left-0 top-0;
+    transform: translateX(calc(clamp(0px, 46vw, 720px) - 50%)) translateY(-50%);
+    width: clamp(146px, 100%, 278px);
+    transition: transform 0.5s, fill 0.2s 0s;
+  }
+
+  &.up {
+    > svg {
+      @apply fill-primary;
+      max-width: 160px;
+      transform: translateX(calc(0vw)) translateY(-50%);
+    }
+    /* Align with the wrapper's edge */
+    transform: translateY(30px) translateX(-50%);
+  }
+}
+@media (min-width: 1024px) {
+  .logo {
+    @apply fixed  z-40 left-1/2   top-0 transition-all duration-500;
+
+    transform: translateY(clamp(70px, 21vh, 230px)) translateX(-50%);
+    > svg {
+      @apply absolute  fill-white left-0 top-0 transition-all duration-500;
+      transform: translateX(calc(clamp(10px, 47.5vw, 720px) - 50%)) translateY(-50%);
+      width: clamp(146px, 100%, 278px);
+      transition: transform 0.5s, fill 0.4s 0s;
+    }
+
+    &.up {
+      > svg {
+        @apply fill-primary;
+        max-width: 160px;
+        transform: translateX(calc(0vw)) translateY(-50%);
+      }
+
+      transform: translateY(40px) translateX(-50%);
+    }
+  }
+}
