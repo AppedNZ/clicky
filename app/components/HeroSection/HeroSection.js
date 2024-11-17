@@ -1,7 +1,7 @@
 import stripe from "@/app/assets/stripe.svg";
 import { services } from "../../constants/services";
 import Logo from "../Logo";
-// import Background from "./Background";
+import Background from "./Background";
 import BusinessPicker from "./BusinessPicker";
 import BusinessSlider from "./BusinessSlider";
 import styles from "./HeroSection.module.scss";
@@ -11,7 +11,7 @@ export default function HeroSection() {
     <>
       <section
         className={` relative z-0 w-full lg:h-[95vh] max-h-[1080px] ${styles.hero} overflow-hidden`}>
-        {/* <Background /> */}
+        <Background />
         <div className="wrap relative z-10 h-full flex flex-col items-center justify-center lg:gap-3">
           <Logo className={` fill-white mb-[5vw] flex-shrink-0 opacity-0  ${styles.logo}`} />
 
