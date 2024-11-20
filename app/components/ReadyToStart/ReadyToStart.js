@@ -1,3 +1,5 @@
+"use client";
+import { triggerSignUpEvent } from "../../utils/customEvents";
 import Heading from "../Heading";
 
 export default function ReadyToStart() {
@@ -7,7 +9,13 @@ export default function ReadyToStart() {
         <Heading color="white" addClassName="max-lg:text-center">
           Ready To start Marketing?
         </Heading>
-        <button className="p-6 md:px-12 bg-black font-extrabold uppercase text-2xl h-min self-center rounded-[10px] row-span-2">
+        <button
+          onClick={() => {
+            triggerSignUpEvent({
+              detail: {},
+            });
+          }}
+          className="p-6 md:px-12 bg-black font-extrabold uppercase text-2xl h-min self-center rounded-[10px] row-span-2">
           Let&apos;s Go!
         </button>
         <p className="text-xl lg:text-2xl max-lg:text-center">

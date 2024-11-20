@@ -17,6 +17,7 @@ export default function SignUp() {
   const [step, setStep] = useState(1);
   const [pickedService, setPickedService] = useState(services[0]);
   const [location, setLocation] = useState(locations[0]);
+  const [plan, setPlan] = useState();
   const onClose = () => {
     setShow(false);
     setStep(1);
@@ -115,6 +116,7 @@ export default function SignUp() {
             {plans.map((plan, i) => (
               <Plan
                 onClick={() => {
+                  setPlan(plan.title);
                   setStep(3);
                 }}
                 key={plan.title}

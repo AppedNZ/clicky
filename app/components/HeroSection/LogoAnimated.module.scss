@@ -22,7 +22,7 @@
 }
 @media (min-width: 1024px) {
   .logo {
-    @apply fixed  z-40 left-1/2   top-0 transition-all duration-500;
+    @apply fixed  z-30 left-1/2   top-0 transition-all duration-500;
 
     transform: translateY(clamp(70px, 21vh, 230px)) translateX(-50%);
     > svg {
@@ -39,7 +39,7 @@
         transform: translateX(calc(0vw)) translateY(-50%);
       }
 
-      transform: translateY(40px) translateX(-50%);
+      transform: translateY(36px) translateX(-50%);
     }
   }
 }
