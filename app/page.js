@@ -21,7 +21,6 @@ export default function Home() {
       <WeHelp />
       <GetMore />
       <HowItWorks />
-      <SomeServices />
       <ServiceAvailability />
       <PricingPlans />
       <WhatIncluded />
