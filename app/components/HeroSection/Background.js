@@ -11,8 +11,8 @@ export default function Background() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             // Add the class to play the animation when in view
-            entry.target.classList.add("animate");
-            entry.target.classList.remove("paused");
+            // entry.target.classList.add("animate");
+            entry.target.classList.add("paused");
           } else {
             // Pause the animation when out of view
             entry.target.classList.add("paused");
