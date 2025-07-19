@@ -16,6 +16,7 @@ export const services = [
   { title: "Pest Control 🦟", value: "pest-control" },
   { title: "Plumbing🚰", value: "plumbing" },
   { title: "Window Repair 🪟", value: "window-repair" },
+  { title: "Other ", value: "other" },
 ];
 export const services_obj = {
   arborist: "Arborist 👷",

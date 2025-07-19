@@ -100,6 +100,16 @@ export default function SignUp() {
               options={services}
               selectValueFn={setPickedService}
             />
+            {pickedService?.value === "other" ? (
+              <Input
+                addClassNames="input-shadow p-5 3xl:p-7"
+                type="text"
+                requried
+                placeholder="Your Service"
+              />
+            ) : (
+              ""
+            )}
             <ServiceSelect
               placeholder={"Region:"}
               value={location}

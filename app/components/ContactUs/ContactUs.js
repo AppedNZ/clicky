@@ -27,7 +27,7 @@ export default function ContactUs() {
           />
           <input
             type="email"
-            placeholder="Name"
+            placeholder="Email"
             required
             className="bg-[#F1F1F1] w-full rounded-[10px] p-5 xl:p-7"
           />
