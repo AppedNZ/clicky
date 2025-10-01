@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { locations } from "../../constants/locations";
 import { services } from "../../constants/services";
-import { triggerSignUpEvent } from "../../utils/customEvents";
 import Button from "../Button";
 import DropDown from "../DropDown";
 import styles from "./BusinessPicker.module.scss";
@@ -25,15 +24,18 @@ export default function BusinessPicker() {
         onSelect={setCurrent_service}
       />
       <Button
+        as="a"
+        href="#contact-us"
         addClassName="w-full "
-        onClick={() => {
-          triggerSignUpEvent({
-            detail: {
-              service: current_service,
-              region: current_region,
-            },
-          });
-        }}>
+        // onClick={() => {
+        //   triggerSignUpEvent({
+        //     detail: {
+        //       service: current_service,
+        //       region: current_region,
+        //     },
+        //   });
+        // }}
+      >
         let&apos;s go{" "}
       </Button>
     </div>
