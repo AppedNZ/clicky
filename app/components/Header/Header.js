@@ -71,8 +71,8 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a className="primary-gradient p-3 rounded-[10px] text-white " href="tel:0800 249 203">
-            0800 249 203
+          <a className="primary-gradient p-3 rounded-[10px] text-white " href="tel:+640211695214">
+            021 169 5214
           </a>
         </div>
       </div>

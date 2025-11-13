@@ -8,8 +8,8 @@ export default function ContactUs() {
         <Heading>Have Any Questions?</Heading>
         <p className="italic font-light text-2xl text-black">
           Fill out the below form or call us on{" "}
-          <a className="text-primary not-italic font-bold" href="tel:0800 249 203">
-            0800 249 203
+          <a className="text-primary not-italic font-bold" href="tel:+640211695214">
+            021 169 5214
           </a>
         </p>
         <form className=" mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 2xl:gap-10 text-black text-xl leading-none w-full p-6 lg:p-8 2xl:p-16 bg-white rounded-[20px] shadow">
